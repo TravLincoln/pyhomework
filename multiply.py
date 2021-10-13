@@ -1,8 +1,7 @@
 import math
 def multiply_list(myList):
     
-    result = 1
+    res = 1
     for i in myList:
         res = res * i 
-    return res
-    
+    return res    
