@@ -10,8 +10,11 @@ def calculator(num1,num2,operator):
    
     elif operator == '/':
         return float(num1) / float(num2) if float(num2) != 0 else 0
+    
+    elif operator == '//':
+        return float(num1) // float(num2) if float(num2) !=0 else 0
 
-    elif operator == "**":
+    elif operator == '**':
         return float(num1)** float(num2)
 
     else:
