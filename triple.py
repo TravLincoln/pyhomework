@@ -1,4 +1,4 @@
-def do_thrice(func):
+def tripler(func):
     def wrapper_do_thrice():
         func()
         func()
