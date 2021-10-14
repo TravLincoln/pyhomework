@@ -1,10 +1,17 @@
 import time 
 
-def calculate_time(time):
-    return f"Total time {time}"
+def calculate_time(tester):
+    def wrapper():
+        start = time.time()
+        tester
+        end = time.time()
+        total= end - start
+        print("Total time {}".format(total))
+    return wrapper
 
-def timefunc(totaltime):
-    return totaltime(time.time())
-time.sleep(2)
+def func_time():
+    time.sleep(2)
     
-print(calculate_time(time))
+func_time = calculate_time(func_time)
+func_time()
+
