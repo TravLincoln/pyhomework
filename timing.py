@@ -3,7 +3,7 @@ import time
 def calculate_time(tester):
     def wrapper():
         start = time.time()
-        tester
+        tester()
         end = time.time()
         total= end - start
         print("Total time {}".format(total))
