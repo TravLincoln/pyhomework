@@ -1,5 +1,5 @@
 import time 
 
-def time_time():
+def calculate_time():
     return time.time()
-print(time_time())
+print(calculate_time())
