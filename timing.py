@@ -12,6 +12,4 @@ def calculate_time(tester):     #calculate time function created with tester() d
 def func_time():                #calculates time with 2 second wait
     time.sleep(2)
     
-func_time = calculate_time(func_time) #function created where time is calulated with 2 second wait
-func_time()                         #runs command
 
